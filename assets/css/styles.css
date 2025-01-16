@@ -20,7 +20,32 @@ body {
     max-width: calc(100% - 48px);
     margin: 0 auto;
 }
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    --height: 60px;
+    display: inline-block;
+    line-height: var(--height);
+    padding: 0 20px;
+    border: 1px solid #2e80ce;
+    color: #ffff;
+    background: #2e80ce;
+    height: var(--height);
+    border-radius: 99px;
+    min-width: 205px;
+    text-align: center;
+    font-size: 1.6rem;
+    font-size: 400;
+}
+.btn:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
 .header {
+    padding-top: 30px;
     min-height: 100vh;
     background: var(--header-bg);
 }
@@ -68,4 +93,40 @@ body {
 .logo__brand--small {
     font-size: 1.2em;
     font-weight: 300;
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar__list {
+    display: flex;
+}
+.action__login,
+.navbar__link {
+    padding: 4px 21px;
+    color: #c9d2da;
+    font-family: 1.6rem;
+    font-weight: 300;
+}
+.navbar__link:hover,
+.navbar__link--active {
+    text-shadow: 1px 0 0 currentColor;
+    color: #ffff;
+}
+.navbar__link--active::before {
+    content: "";
+    position: relative;
+    display: inline-block;
+    top: -2px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #ffff;
+    margin-right: 0.8rem;
+}
+.action__signup {
+    min-width: 104px;
+    --height: 44px;
 }
