@@ -225,9 +225,56 @@ a {
     justify-content: space-between;
     margin-top: 70px;
 }
+.service__list {
+    margin-bottom: 55px;
+}
 .service__img {
     width: 570;
     height: 570px;
     border-radius: 12px;
     object-fit: cover;
+}
+
+.service-item {
+    display: flex;
+    padding: 22px;
+    width: 470px;
+    border-radius: 10px;
+    background: #ffff;
+    transition: 0.25s;
+}
+.service-item:hover {
+    box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.05);
+    position: relative;
+}
+.service-item:hover .service-item__icon-wrap {
+    background: #2e80ce;
+    color: #ffff;
+}
+.service-item__icon-wrap {
+    margin-right: 19px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #10375c;
+    width: 60px;
+    height: 60px;
+    background: #eff6fd;
+    border-radius: 50%;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.05);
+    transition: 0.25s;
+}
+
+.service-item__heading {
+    color: #10375c;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.27;
+}
+.service-item__desc {
+    color: #575f66;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.755; /* 175% */
 }
